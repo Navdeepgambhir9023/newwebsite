@@ -6,7 +6,7 @@ body {
  .navbar {
    position: fixed !important;
    width: 100%;
-   background-color: #F38181;
+   background-color: #112B3C;
 }
 
  .navbar-brand {
@@ -58,10 +58,11 @@ body {
 
  /* Section 1 */
  .top-container {
-   padding: 50px;
-   pointer-events: none;
-   padding-top: 150px;
-   text-align: center;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  padding-top: 25%;
+  padding-bottom: 25%;
  }
 
 .master-section {
@@ -69,8 +70,12 @@ body {
   position: absolute;
   display: table;
   width: 100%;
+  height: auto;
 }
 
+.title {
+  text-align: center;
+}
 
  .Home-section {
    /* background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgba(255, 206, 134, 1) 64.7%, rgba(172, 253, 163, 0.64) 112.1%); */
@@ -86,6 +91,8 @@ body {
    font-weight: bold;
    font-size: 140%;
    font-family: 'Hahmlet', serif;
+   align-items: center;
+   text-shadow: .1em .1em .3em black;
  }
 
  .title-word-1 {
@@ -164,7 +171,8 @@ body {
  }
 
 .image-div {
-
+ position:absolute;
+ z-index: -1;
 
 }
 

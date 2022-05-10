@@ -3,7 +3,7 @@ var width = "100%",
 
 var i = 0;
 
-var svg = d3.select("body, top-container").append("svg")
+var svg = d3.select("body").append("svg")
   .attr("width", width)
   .attr("height", height);
 
@@ -14,20 +14,23 @@ svg.append("rect")
 
 function particle() {
   var m = d3.mouse(this);
+  var n = d3.touch(this);
 
   svg.insert("circle", "rect")
     .attr("cx", m[0])
     .attr("cy", m[1])
     .attr("r", 1) // 1e-6
-    .style("stroke", d3.hsl("pink"))
+    .style("stroke", d3.hsl("#112B3C"))
+    // style(zIndex = "-1";)
     .style("stroke-opacity", 1)
     .transition()
-    .duration(700)
+    .duration(400)
     .ease(Math.sqrt)
     .attr("r", 1)
-    .style("stroke-opacity", 1e-12)
+    .style("stroke-opacity", 1e-2)
     .style("stroke-width", 70)
     .remove();
+
 
   d3.event.preventDefault();
 }
