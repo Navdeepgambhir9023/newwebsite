@@ -187,7 +187,7 @@ body {
 }
 
 .about-img{
-display: inline-block;
+align-items: center;
 }
 
 .website-logo {
@@ -198,5 +198,7 @@ display: inline-block;
 }
 
 .about-para {
-  display: inline-block;
+  width: 75%;
+  margin-top: 2%;
+  align-items: center;
 }
