@@ -20,7 +20,7 @@ function particle() {
     .attr("cx", m[0])
     .attr("cy", m[1])
     .attr("r", 1) // 1e-6
-    .style("stroke", d3.hsl("#112B3C"))
+    .style("stroke", d3.hsl("pink"))
     // style(zIndex = "-1";)
     .style("stroke-opacity", 1)
     .transition()

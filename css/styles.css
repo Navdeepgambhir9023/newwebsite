@@ -4,6 +4,26 @@ body {
   color: white;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-image: linear-gradient(64.3deg, rgba(254, 122, 152, 0.81) 17.7%, rgba(255, 206, 134, 1) 64.7%, rgba(172, 253, 163, 0.64) 112.1%);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-image: linear-gradient(to bottom, #95e1d3, #a4e7d1, #b3edcf, #c3f3ce, #d4f8ce, #dbf9c9, #e2f9c3, #ebf9be, #edf4b1, #f1efa3, #f6e996, #fce38a);
+}
+
 /* All of the nav bar
 ==================================================== */
 .navbar {
@@ -183,22 +203,84 @@ body {
 
 .about-me {
   background-color: black;
-  padding: 2%;
+  padding: 100px 0px;
 }
 
-.about-img{
-align-items: center;
+.about-content {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 50px;
+}
+
+.about-img {
+  margin: ;
+  width: 45%;
 }
 
 .website-logo {
-  width: 200px;
-  z-index: 1;
-  background: white;
+  height: 400px;
+  width: 400px;
+  background-color: white;
+  object-fit: cover;
   border-radius: 50%;
+  object-fit: cover;
+}
+
+.about-text {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .about-para {
-  width: 75%;
-  margin-top: 2%;
-  align-items: center;
+  width: 55%;
+  text-align: justify;
+  color: white;
 }
+
+@media (max-width: 1104px) {
+  .about-img {
+    height: 350px;
+    width: 350px;
+  }
+}
+
+@media (max-width: 991px) {
+  .max-width {
+    padding: 0 50px;
+  }
+}
+
+@media (max-width: 947px) {
+
+  .max-width {
+    max-width: 930px;
+  }
+
+  .about-para {
+    width: 100%;
+    flex: 100%;
+  }
+
+  .about-img {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+    width: 100%;
+  }
+
+@media (max-width: 500px) {
+    .about-para {
+      font-size: 19px;
+    }
+
+    .scroll-up-btn {
+      right: 15px;
+      bottom: 15px;
+      height: 38px;
+      width: 35px;
+      font-size: 23px;
+      line-height: 38px;
+    }
