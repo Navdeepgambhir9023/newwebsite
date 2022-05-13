@@ -24,34 +24,6 @@ html {
   background-image: linear-gradient(to bottom, #95e1d3, #a4e7d1, #b3edcf, #c3f3ce, #d4f8ce, #dbf9c9, #e2f9c3, #ebf9be, #edf4b1, #f1efa3, #f6e996, #fce38a);
 }
 
-.scroll-up-btn{
-    position: fixed;
-    height: 45px;
-    width: 42px;
-    background: crimson;
-    right: 30px;
-    bottom: 10px;
-    text-align: center;
-    line-height: 45px;
-    color: #fff;
-    z-index: 9999;
-    font-size: 30px;
-    border-radius: 6px;
-    border-bottom-width: 2px;
-    cursor: pointer;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s ease;
-}
-.scroll-up-btn.show{
-    bottom: 30px;
-    opacity: 1;
-    pointer-events: auto;
-}
-.scroll-up-btn:hover{
-    filter: brightness(90%);
-}
-
 /* All of the nav bar
 ==================================================== */
 .navbar {
@@ -112,6 +84,9 @@ html {
   font-weight: 500;
 }
 
+.fas {
+  color: white;
+}
 /* Navbar expand
 ==============================================
 ============================================== */
@@ -307,14 +282,5 @@ html {
 @media (max-width: 500px) {
     .about-para {
       font-size: 19px;
-    }
-
-    .scroll-up-btn {
-      right: 15px;
-      bottom: 15px;
-      height: 38px;
-      width: 35px;
-      font-size: 23px;
-      line-height: 38px;
     }
 }
