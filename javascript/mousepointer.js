@@ -29,7 +29,4 @@ function particle() {
     .style("stroke-opacity", 1e-2)
     .style("stroke-width", 70)
     .remove();
-
-
-  d3.event.preventDefault();
 }

@@ -1,7 +1,7 @@
 body {
   width: 100%;
   height: 150%;
-  color: white;
+  background-image: linear-gradient(to bottom, #95e1d3, #a4e7d1, #b3edcf, #c3f3ce, #d4f8ce, #dbf9c9, #e2f9c3, #ebf9be, #edf4b1, #f1efa3, #f6e996, #fce38a);
 }
 
 html {
