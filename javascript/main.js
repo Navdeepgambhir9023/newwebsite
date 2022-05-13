@@ -7,18 +7,4 @@
 	      $('.navbar').removeClass("sticky");
 	    }
 	  });
-	  var windowHeight = $(window).height(),
-	    topSection = $('master-section');
-	  topSection.css('height', windowHeight);
-
-	  $(window).resize(function() {
-	    var windowHeight = $(window).height();
-	    topSection.css('height', windowHeight);
-	  });
-	  // scroll-up button show/hide script
-	  if (this.scrollY > 500) {
-	    $('.scroll-up-btn').addClass("show");
-	  } else {
-	    $('.scroll-up-btn').removeClass("show");
-	  }
 	});
