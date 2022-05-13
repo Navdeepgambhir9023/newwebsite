@@ -31,12 +31,14 @@ html {
   width: 100%;
   background: black ;
   transition: all 0.3s ease;
+  padding: 10px !important;
 }
 
 .navbar.sticky{
   background: #112B3C;
-
+  padding: 1px !important;
 }
+
 .navbar-brand {
   color: white;
   font-size: 1.75rem !important;
@@ -86,6 +88,7 @@ html {
 
 .fas {
   color: white;
+  margin-top: 9px;
 }
 /* Navbar expand
 ==============================================
