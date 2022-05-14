@@ -8,3 +8,12 @@
 	    }
 	  });
 	});
+
+  var windowHeight = $(window).height(),
+    topSection = $('#home');
+  topSection.css('height', windowHeight);
+
+  $(window).resize(function() {
+    var windowHeight = $(window).height();
+    topSection.css('height', windowHeight);
+  });

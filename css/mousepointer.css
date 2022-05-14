@@ -5,7 +5,7 @@
 	 width: 100%;
 }
 
- rect {
+rect {
 	 fill: none;
 	 pointer-events: all;
 }
