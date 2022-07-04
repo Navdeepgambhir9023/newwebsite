@@ -7,13 +7,12 @@
 	      $('.navbar').removeClass("sticky");
 	    }
 	  });
+	  var windowHeight = $(window).height(),
+	    topSection = $('master-section');
+	  topSection.css('height', windowHeight);
+
+	  $(window).resize(function() {
+	    var windowHeight = $(window).height();
+	    topSection.css('height', windowHeight);
+	  });
 	});
-
-  var windowHeight = $(window).height(),
-    topSection = $('#home');
-  topSection.css('height', windowHeight);
-
-  $(window).resize(function() {
-    var windowHeight = $(window).height();
-    topSection.css('height', windowHeight);
-  });

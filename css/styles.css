@@ -1,6 +1,6 @@
 body {
   width: 100%;
-  height: 150%;
+  height: 180%;
 }
 
 html {
@@ -28,12 +28,13 @@ html {
 .navbar {
   position: fixed !important;
   width: 100%;
-  background: black ;
+  background: black;
   transition: all 0.3s ease;
   padding: 10px !important;
+  z-index: 5;
 }
 
-.navbar.sticky{
+.navbar.sticky {
   background: #112B3C;
   padding: 1px !important;
 }
@@ -89,6 +90,7 @@ html {
   color: white;
   margin-top: 5px;
 }
+
 /* Navbar expand
 ==============================================
 ============================================== */
@@ -250,6 +252,17 @@ html {
   color: white;
 }
 
+@media only screen and (max-width: 800px) {
+  body {
+    height: 245%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  body {
+    height: 235%;
+  }
+}
 @media (max-width: 1104px) {
   .about-img {
     height: 350px;
@@ -264,7 +277,6 @@ html {
 }
 
 @media (max-width: 947px) {
-
   .max-width {
     max-width: 930px;
   }
@@ -281,8 +293,94 @@ html {
     width: 100%;
   }
 
-@media (max-width: 500px) {
+  @media (max-width: 500px) {
     .about-para {
       font-size: 19px;
     }
+  }
+}
+
+.skill-section {
+  background-size: cover;
+  display: flex;
+}
+
+.skill-box {
+  width: 100%;
+  padding-top: 85px;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 1px 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.skill-box>h3 {
+  font-size: 60px;
+}
+
+.skill-box>.skills-circle>ul {
+  text-align: center;
+  list-style-type: none;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.skill-box>.skills-circle>ul>li {
+  width: 150px;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 50%;
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  margin: 50px 50px;
+}
+
+.skill-box>.skills-circle>ul>li>span {
+  color: #7a7;
+}
+
+.skill-box>.skills-circle>ul>li>span.text, .skill-box>.skills-circle>ul>li>span~b {
+  top: 50%;
+  left: 50%;
+  position: absolute;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  top: 50px;
+}
+
+.skill-box>.skills-circle>ul>li>span.text~b, .skill-box>.skills-circle>ul>li>span~b~b {
+  font-weight: normal;
+  margin-top: 35px;
+}
+
+.skill-box>.skills-circle>ul>li>span.bar-circle-right, .skill-box>.skills-circle>ul>li>span.bar-circle-left {
+  border-radius: 50%;
+  position: absolute;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: #B0DAB9;
+  clip: rect(0, 75px, 150px, 0);
+}
+
+.skill-box>.skills-circle>ul>li>span.bar-circle-left {
+  background: #ddd;
+}
+
+.skill-box>.skills-circle>ul>li>span.bar-circle-cover {
+  display: block;
+  width: 95%;
+  height: 95%;
+  border-radius: 50%;
+  background-color: #eee;
+  z-index: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
